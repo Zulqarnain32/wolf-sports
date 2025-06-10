@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { AuthContext } from "../global/AuthContext";
 import { BarLoader } from "react-spinners";
 
-import "react-toastify/dist/ReactToastify.css";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -26,12 +26,12 @@ const Login = () => {
         console.log("login result is ", result);
         const message = result?.data?.message;
 
-        if (message === "Successfully logged in") {
+        if (message === "sucessfully login") {
           window.localStorage.setItem("id", result.data.id);
           window.localStorage.setItem("user", JSON.stringify(result.data));
           setUser({ email: result.data.email });
           toast.success("Login successful!", { autoClose: 2000 });
-          navigate("/generate-test");
+          navigate("/products");
           window.location.reload()
         } else if (message === "please fill all the fields") {
           toast.warning("Please fill all the fields", { autoClose: 2500 });

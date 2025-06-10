@@ -4,7 +4,6 @@ import axios from "axios";
 import { toast } from 'react-toastify';
 import { BarLoader } from "react-spinners";
 
-import 'react-toastify/dist/ReactToastify.css';
 
 const Registration = () => {
   const [email, setEmail] = useState("");

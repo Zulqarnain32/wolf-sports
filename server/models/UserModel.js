@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema({
         oldPrice: { type: Number },
         reviews: { type: Number },
         off: { type: Number },
+        quantity: { type: Number, default:1 }
       },
     ],
     default: [],

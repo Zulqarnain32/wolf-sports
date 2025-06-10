@@ -3,6 +3,8 @@ const cors = require('cors');
 const dbConnect = require('./config/db');
 const app = express();
 const productRoute = require("./routes/productRoute")
+const authRoute = require("./routes/authRoute")
+const cartRoute = require("./routes/cartRoute")
 
 app.use(
   cors({
@@ -20,6 +22,8 @@ app.get("/", (req, res) => {
   res.send("backend is working");
 });
 
+app.use("/api/auth", authRoute);
+app.use("/api/cart", cartRoute);
 app.use("/api/products", productRoute);
 
 const PORT = 5000;

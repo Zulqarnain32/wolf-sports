@@ -23,12 +23,6 @@ useEffect(() => {
   };
 }, []);
 
-  // console.log("user", user);
-
-  const [userData, setUserData] = useState();
-
-
-  // console.log("User DAta ", userData);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -41,7 +35,6 @@ useEffect(() => {
   let isAdmin = user?.role === "admin";
 
   const handleLogout = () => {
-    setCookies("access_token", ""); // Remove JWT token
     window.localStorage.removeItem("user"); // Remove local user
     window.location.reload();
   };
