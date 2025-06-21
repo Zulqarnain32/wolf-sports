@@ -41,7 +41,7 @@ const Home = () => {
         <div className="relative z-10 text-center px-4">
           <div className="bg-gradient-to-r from-black/70 to-transparent p-8 rounded-xl backdrop-blur-sm inline-block">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
-              DOMINATE THE PITCH
+              DOMINATE THE PITCHs
             </h1>
             <p className="text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
               Precision-engineered football boots for every playing style. 
