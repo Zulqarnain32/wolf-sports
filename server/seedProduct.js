@@ -62,18 +62,9 @@ const products = [
     off: 5,
     rating: 5,
   },
+
   {
     id: 7,
-    name: "Wolf sports hybrid football",
-    price: 4000,
-    image: "/assets/images/football7.jpg",
-    oldPrice: 2000,
-    reviews: 7,
-    off: 5,
-    rating: 5,
-  },
-  {
-    id: 8,
     name: "Brilliant hybrid footbal",
     price: 1500,
     image: "/assets/images/football1.jpg",
@@ -82,6 +73,29 @@ const products = [
     off: 5,
     rating: 5,
   },
+  
+  {
+    id: 8,
+    name: "Professional keeper gloves latex",
+    price: 3750,
+    image: "/assets/images/gloves1.jpg",
+    oldPrice: 4000,
+    reviews: 7,
+    off: 5,
+    rating: 5,
+  },
+  
+  {
+    id: 9,
+    name: "Pump football volleyball",
+    price: 960,
+    image: "/assets/images/pump1.jpg",
+    oldPrice: 1200,
+    reviews: 7,
+    off: 5,
+    rating: 5,
+  },
+
 ];
 
 const seedProduct = async () => {
