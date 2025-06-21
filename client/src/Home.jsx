@@ -82,9 +82,12 @@ const Home = () => {
                 <div className="relative z-20 h-full flex flex-col justify-end p-6">
                   <h3 className="text-2xl font-bold text-white mb-2">{item.name}</h3>
                   <p className="text-yellow-400 mb-4">{item.price}</p>
-                  <button className="bg-yellow-500 text-black font-medium py-2 px-4 rounded-full w-full hover:bg-yellow-600 transition">
-                    View Detail
-                  </button>
+                  <Link to={"/products"}>
+                     <button className="bg-yellow-500 text-black font-medium py-2 px-4 rounded-full w-full hover:bg-yellow-600 transition">
+                       View Detail
+                     </button>
+                  </Link>
+                 
                 </div>
                 <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-yellow-500 rounded-full opacity-20 group-hover:opacity-30 transition-all duration-700"></div>
                 <img 
@@ -137,9 +140,12 @@ const Home = () => {
           <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
             Join thousands of players who trust our footwear for their most important matches.
           </p>
-          <button className="xs:px-6 xs:py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-10 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
-            SHOP ALL FOOTBALL BOOTS
-          </button>
+          <Link to="/products">
+            <button className="xs:px-6 xs:py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-10 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+              SHOP ALL FOOTBALL BOOTS
+            </button>
+          </Link>
+          
         </div>
       </section>
     </div>
