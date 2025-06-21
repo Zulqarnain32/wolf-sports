@@ -21,7 +21,8 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:5000/api/auth/login", { email, password })
+      // .post("http://localhost:5000/api/auth/login", { email, password })
+      .post("https://wolf-sports.vercel.app/api/auth/login", { email, password })
       .then((result) => {
         console.log("login result is ", result);
         const message = result?.data?.message;

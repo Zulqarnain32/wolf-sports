@@ -17,7 +17,8 @@ const Registration = () => {
     e.preventDefault();
     setLoading(true)
   
-    axios.post('http://localhost:5000/api/auth/register', { username,email,password })
+    // axios.post('http://localhost:5000/api/auth/register', { username,email,password })
+    axios.post('https://wolf-sports.vercel.app/api/auth/register', { username,email,password })
     .then((response) => {
       console.log("register ",response )
       const msg = response?.data?.message;

@@ -8,7 +8,8 @@ const Product = () => {
 
     useEffect(() => {
         axios
-            .get('http://localhost:5000/api/products/fetch')
+            // .get('http://localhost:5000/api/products/fetch')
+            .get('https://wolf-sports.vercel.app/api/products/fetch')
             .then((result) => {
                 setProducts(result.data);
                 setLoading(false);
