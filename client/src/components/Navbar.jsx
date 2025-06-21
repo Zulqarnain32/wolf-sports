@@ -50,7 +50,7 @@ useEffect(() => {
   return (
     <div className="sticky w-full top-0 h-[70px] flex justify-between items-center px-10 xs:px-5 z-50 bg-gradient-to-r from-[#83ccff] to-[#4290fb] bg-blue-300">
       <div className="flex items-center text-[30px] text-red-500">
-        <h4 className="font-extrabold">
+        <h4 className="font-extrabold xs-text-[15px]">
           WOLF<span className="text-red-500">SPORTS</span>
         </h4>
       </div>
