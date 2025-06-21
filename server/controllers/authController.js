@@ -10,18 +10,18 @@ const register = async (req, res) => {
     console.log("user data ", username,email,password);
     
     if(!username || !email || !password ||whatsApp ){
-      return res.json({message:"please fill all the fields"})
+      return res.json({message:"Please fill all the fields"})
     }
     const user = await Usermodel.findOne({ email });
     if(user){
-      return res.json({message:"email already exist"})
+      return res.json({message:"Email already exists"})
     }
 
     
     const hashPassword = await bcrypt.hash(password, 10);
     const newUser = new Usermodel({ username,email,whatsApp,password:hashPassword });
     await newUser.save();
-    console.log("user registered");
+    console.log("Registered Successfully");
     
     res.json({ message: `Registered Successfully` });
   } catch (err) {

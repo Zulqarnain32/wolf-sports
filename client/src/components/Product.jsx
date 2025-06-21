@@ -15,7 +15,7 @@ const Product = () => {
                 setLoading(false);
             })
             .catch((err) => {
-                console.log(err);
+                console.log("error fetching products ", err);
                 setLoading(false);
             });
     }, []);
