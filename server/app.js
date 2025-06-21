@@ -8,7 +8,8 @@ const cartRoute = require("./routes/cartRoute")
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    // origin: ["http://localhost:5173"],
+    origin: ["https://wolf-sports-shahdara.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
